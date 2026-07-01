@@ -8,6 +8,7 @@ feature_names = joblib.load('feature_names.pkl')
 
 
 st.title('Diabetes Risk Prediction')
+st.write('Note: this model was trained on data from women (Pima Indian heritage, age 21+). Predictions for other groups may be unreliable.')
 st.write('Enter the patient details below to estimate diabetes risk.')
 
 
