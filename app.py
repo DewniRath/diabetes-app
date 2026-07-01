@@ -7,6 +7,9 @@ model = joblib.load('diabetes_model.pkl')
 feature_names = joblib.load('feature_names.pkl')
 
 
+st.markdown("### 🩺 Check your diabetes risk in seconds")
+st.divider() 
+st.set_page_config(page_title="Diabetes Risk Predictor", page_icon="🩺", layout="centered")
 st.title('Diabetes Risk Prediction')
 st.write('Note: this model was trained on data from women (Pima Indian heritage, age 21+). Predictions for other groups may be unreliable.')
 st.write('Enter the patient details below to estimate diabetes risk.')
